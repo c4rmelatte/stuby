@@ -51,12 +51,12 @@ export default function Ninawork() {
                 <div className="flip-card-inner1">
                   <div className="flip-card-front1">
                     <div className="member-photo-wrapper1">
-                      <img src={member.imgpj1} alt="Member Front" className="member-photo1" />
+                      <img src={member.imgpj1} alt="Member Front" className="member-photo2" />
                     </div>
                   </div>
 
                   <div className="flip-card-back1">
-                    <img src={member.imgpj2} alt="Member Back" className="member-photo1" />
+                    <img src={member.imgpj2} alt="Member Back" className="member-photo2" />
                   </div>
                 </div>
               </div>
