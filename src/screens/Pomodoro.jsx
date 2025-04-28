@@ -96,7 +96,7 @@ export default function Pomodoro() {
           <span>NOTEPAD</span>
         </div>
 
-        <div className="sidebar-item" onClick={() => navigate("/login")}>
+        <div className="sidebar-item" onClick={() => navigate("/")}>
           <FaSignOutAlt size={25} />
           <span>LOGOUT</span>
         </div>

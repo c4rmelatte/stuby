@@ -50,7 +50,7 @@ export default function FlashcardCollection1() {
 
 
 
-        <div className="sidebar-item" onClick={() => navigate("/login")}>
+        <div className="sidebar-item" onClick={() => navigate("/")}>
             <FaSignOutAlt size={25} />
             <span>LOGOUT</span>
           </div>
