@@ -1,0 +1,103 @@
+/* Global styles for background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  div {
+    box-sizing: border-box;
+  }
+  
+  /* Register page specific styles */
+  .login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .login-box {
+    background-color: #39553F;
+    padding: 2rem 3rem;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .screen-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #DFAD41;
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    width: 90%;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border: 2px solid #39553F; /* Dark green border */
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #fff; /* Input text color */
+    background-color: #497248;
+    align-items: center;
+  }
+  
+  /* Placeholder style */
+  .input-field::placeholder {
+    color: #ABBC86; /* Soft green placeholder */
+    opacity: 1; /* Full opacity */
+  }
+  
+  
+  .input-field:focus {
+    border-color: #e4c78c; /* Light gold color */
+    outline: none;
+
+  }
+  
+  .text {
+    font-size: 0.9rem;
+    color: #ABBC86;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .text:hover {
+    color: #e4c78c;
+  }
+  
+  .login-button {
+    margin-top: 20px;
+    background-color: #E5DDD5; /* Light gold color */
+    color: #39553F; /* Dark green color */
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .login-button:hover {
+    background-color: #d0b176; /* Darker gold shade on hover */
+  }
+  
+  /* Background styling */
+  div[style] {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

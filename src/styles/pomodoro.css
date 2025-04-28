@@ -1,0 +1,120 @@
+/* Keep background and layout as-is */
+.drawer-content {
+  min-height: 110vh;
+  padding: 3rem; /* slightly more space around */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pomodoro container */
+.container {
+  margin-top: -200px;
+  margin-left: -100px;
+  background-color: #f9f6eb;
+  padding: 3rem; /* more padding */
+  border-radius: 12px;
+  max-width: 600px; /* bigger container */
+  width: 100%;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Mode switch buttons */
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* more spacing between buttons */
+  margin-bottom: 2rem;
+}
+
+.mode-btn {
+  background-color: #dddcbc;
+  color: #555;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mode-btn.active {
+  background-color: #b8c0a6;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+/* Timer display */
+.timer {
+  font-size: 5.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+/* Control buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  background-color: #9cab7c;
+  color: #fefefe;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.start {
+  background-color: #b8c0a6;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn.pause {
+  background-color: #dddcbc;
+  color: #333;
+}
+
+.btn.reset {
+  background-color: #d4c4b0;
+  color: #333;
+}
+
+.main-content1 {
+  margin-top: 60px; /* match header height */
+  transition: margin-left 0.3s ease;
+  flex: 1;
+  width: 100%;
+  background: linear-gradient(to right, #39553F 0%, #5a6c58 40%, #a8a080 70%, #D3C196 100%);
+  height: calc(100vh - 60px); /* full height minus header */
+  overflow-y: hidden; /* makes it scrollable */
+  overflow-x: hidden;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* .footer1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #39553F 0%, #5a6c58 40%, #a8a080 70%, #D3C196 100%);
+  color: #fff;
+  padding: 0 60px;
+  z-index: 1000;
+} */

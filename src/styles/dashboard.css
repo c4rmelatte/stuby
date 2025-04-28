@@ -1,0 +1,351 @@
+.drawer-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .drawer-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #39553f;
+  }
+  
+  /* .drawer-sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100%;
+    background-color: #39553f;
+    color: #cfc39d;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: left 0.3s ease;
+    z-index: 10;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  } */
+  
+  .drawer-sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e4b142;
+    text-align: center;
+    font-family: 'KronaOne-Regular', sans-serif;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #497248;
+  }
+  
+  .drawer-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+ /* dashboard.css */
+
+.dashboard-drawer-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Top header */
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFDF1;
+  color: #fff;
+  padding: 0 60px;
+  z-index: 1001;
+}
+
+.dashboard-drawer-toggle {
+  background: transparent;
+  border: none;
+  color: #39553F;
+  cursor: pointer;
+  padding: 100;
+}
+
+.dashboard-sidebar-logo {
+  font-size: auto;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #D8A73F;
+}
+
+.dashboard-title {
+  color: #f8c557;
+}
+
+/* Sidebar */
+.dashboard-drawer-sidebar {
+  position: fixed;
+  top: 60px;
+  left: -350px; /* hidden */
+  transition: left 0.3s ease;
+  width: 350px;
+  height: calc(100% - 60px);
+  background-color: #5a6c58;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.dashboard-drawer-sidebar.open {
+  left: 0;
+}
+
+.dashboard-sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-item:last-child {
+  margin-top: auto; 
+  color: #E4B142;
+}
+
+.sidebar-item:last-child {
+  margin-top: auto; 
+  color: #E4B142;
+}
+
+
+.dashboard-sidebar-item:hover {
+  background-color: #39553F;
+  color: #FFFDF1;
+}
+
+.dashboard-sidebar-item span {
+  font-size: 20px;
+}
+
+
+.dashboard-banner-image-trans {
+  width: 2000px;
+  height: 700px;
+  opacity: 0.2;
+}
+
+.dashboard-banner-image {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+.dashboard-banner-container {
+  margin-left: -20px; /* Cancel out main-content's horizontal padding */
+  margin-right: -20px;
+  position: relative;
+  text-align: center;
+}
+
+.dashboard-banner-container1 {
+  margin-left: -20px; /* Cancel out main-content's horizontal padding */
+  margin-right: -20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-banner-container2 {
+  max-width: auto;
+  height: auto;
+  text-align: left;
+}
+
+.dashboard-para {
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 6px 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: -10px;
+}
+
+.dashboard-banner-text-left {
+  position: absolute;
+  top: 40%; /* center vertically */
+  left: 25%; /* center horizontally */
+  transform: translate(-40%, -50%);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dashboard-banner-text-center {
+  position: absolute;
+  top: 45%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.dashboard-features-grid {
+  width: 3000px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Makes sure cards wrap */
+}
+
+.dashboard-feature-card {
+  background-color: #497248;
+  padding: 10px 5px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  width: 280px;
+  height: 300px;
+}
+
+.dashboard-feature-card:hover {
+  transform: scale(1.1);
+  background-color: #4a5948;
+}
+
+.dashboard-feature-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.dashboard-drawer-sidebar.open ~ .dashboard-main-content {
+  margin-left: 340px;
+}
+
+.dashboard-auth-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard-signup-btn {
+  height: 35px;
+  width: 100px;
+  background-color:  #06231D;
+  border: 1px solid #1ba68a;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 6px 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-learn-btn {
+  height: 50px;
+  width: 180px;
+  background-color:  #06231D;
+  border: 1px solid #1ba68a;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 6px 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-login-btn {
+  text-align: center;
+  height: 35px;
+  font-weight: bold;
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid #1ba68a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-login-btn:hover {
+  background-color: #06231D;
+  color: #ffffff;
+}
+
+.dashboard-signup-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dashboard-learn-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dashboard-h1 {
+  font-size: 55px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#2e402d; 
+  margin-top: 90px;
+}
+
+
+  

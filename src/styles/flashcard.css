@@ -1,0 +1,103 @@
+.flashcards-drawer-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flashcards-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.flashcards-drawer-toggle {
+  background: none;
+  border: none;
+  color: #f5f5dc;
+  cursor: pointer;
+}
+
+
+
+.flashcards-drawer-content-main {
+  margin-top: 50px;
+  margin-left: 10px; 
+  width: 95%;
+  padding: 2rem; 
+  flex: 1;
+  justify-content: center; 
+  align-items: center; 
+  transition: margin-left 0.3s ease;
+}
+
+.flashcards-container {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  height: calc(100vh - 100px); 
+}
+
+.flashcards-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f5dc; /* light cream */
+  margin-bottom: 0.5rem;
+}
+
+.flashcards-collection-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f5dc; /* light cream */
+  margin-bottom: 1.5rem;
+}
+
+.flashcards-collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center; /* Center the items horizontally */
+}
+
+.flashcards-collection-item {
+  background-color: #f5f5dc; 
+  justify-content: center;
+  align-items: center ;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  width: 1250px;
+  height: 70px; /* Adjusted height for better visibility */
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #2e402d; 
+  font-weight: bold;
+  color: #2e402d; 
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.flashcards-collection-item:hover {
+  transform: translateY(-2px);
+}
+
+.flashcards-add-collection-btn {
+  background-color: #d4c29a; /* light brown for add button */
+}
+
+
+.maincontent2 {
+  margin-top: 10px; /* match header height */
+  transition: margin-left 0.3s ease;
+  flex: 1;
+  width: 100%;
+  background: linear-gradient(to right, #39553F 0%, #5a6c58 40%, #a8a080 70%, #D3C196 100%);
+  height: calc(100vh - 0px); /* full height minus header */
+  overflow-y: hidden; /* makes it scrollable */
+  overflow-x: hidden;
+  text-align: left;
+  box-sizing: border-box;
+}

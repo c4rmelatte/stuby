@@ -1,0 +1,133 @@
+.card-wrapper {
+    background-color: #f5f1df;
+    border-radius: 12px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 8px 8px 0px #2b4430;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    color: #cfa405;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .meta-text {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .meta-text.right {
+    text-align: right;
+  }
+  
+  .music-title {
+    color: #cfa405;
+    margin: 20px 0;
+  }
+  
+  .range-slider {
+    width: 100%;
+    accent-color: #517c5a;
+    margin-left: 5px;
+    margin-bottom: 8px;
+  }
+  
+  .control-buttons {
+    margin-left: 55px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .control-btn {
+    background: transparent;
+    border: none;
+    color: #2b4430;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .control-btn.large {
+    font-size: 28px;
+  }
+  
+  .control-btn:hover {
+    color: #000;
+  }
+  
+  .album-image {
+    width: 320px;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 2px solid #2b4430;
+    margin: 20px 0;
+  }
+  
+  .playlist-title {
+    font-size: 20px;
+    text-align: left;
+    color: #cfa405;
+    margin-bottom: 10px;
+  }
+  
+  .playlist-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #ddd6b9;
+  }
+  
+  .table-head {
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+  
+  .table-data {
+    font-size: 13px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .track-image {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+
+  .main-content3 {
+    
+    margin-top: 60px; /* match header height */
+    transition: margin-left 0.3s ease;
+    flex: 1;
+    width: 100%;
+    background: linear-gradient(to right, #39553F 0%, #5a6c58 40%, #a8a080 70%, #D3C196 100%);
+    height: calc(100vh - 60px); /* full height minus header */
+    overflow-y: hidden; /* makes it scrollable */
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  .forcenter {
+    margin-top: 100px;
+    margin-left: 30%;
+  }
