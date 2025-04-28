@@ -29,7 +29,7 @@ export default function Dashboard() {
 
          {/* Auth buttons */}
          <div className="auth-buttons">
-          <button className="signup-btn" onClick={() => navigate('/login')}>Logout</button>
+          <button className="signup-btn" onClick={() => navigate('/')}>Logout</button>
         </div>
       </header>
 
